@@ -55,7 +55,7 @@ function AddEditPrescriptionPage({ addMode }) {
       ],
     };
 
-    if (addMode) {
+
       try {
         setIsLoading(true);
         if (addMode) {
@@ -72,10 +72,6 @@ function AddEditPrescriptionPage({ addMode }) {
       } finally {
         setIsLoading(false);
       }
-      //dispatch(addPrescription(prescriptionData));
-
-      // dispatch(editPrescription({ id: id, ...prescriptionData }));
-    }
 
     navigate("/");
   };
